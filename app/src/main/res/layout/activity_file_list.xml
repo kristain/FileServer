@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header" />
+
+    <org.mortbay.ijetty.view.pulltorefresh.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listView"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/article_content_bg"
+        android:scrollbars="none"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        ptr:ptrListViewExtrasEnabled="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+
+</LinearLayout>
